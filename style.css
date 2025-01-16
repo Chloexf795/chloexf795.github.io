@@ -35,6 +35,25 @@ body, html {
     transition: opacity 0.3s ease;
 }
 
+/* Portfolio submenu */
+.portfolio-submenu {
+    margin-left: 20px;
+}
+
+/* Back button styling */
+#back-btn {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Back button hover effect */
+#back-btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+
 /* Footer text */
 footer p {
     font-size: 2vw;
