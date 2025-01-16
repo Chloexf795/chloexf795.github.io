@@ -9,19 +9,19 @@
     <!-- Link to custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container vh-100 d-flex flex-column justify-content-center align-items-center text-white">
-        <!-- Back Button -->
-        <a href="index.html" class="text-white text-decoration-none mb-3" style="position: absolute; top: 10px; left: 10px;">← BACK</a>
+<body class="bg-white text-black photos-page">
+    <!-- Back Button -->
+    <a href="index.html" id="back-btn" class="text-black text-decoration-none mb-3" style="position: absolute; top: 20px; left: 20px;">← Back</a>
 
-        <!-- Photo Display -->
-        <img id="photo-display" src="assets/images/photo1.JPG" alt="Random Photo" class="mb-4" style="max-width: 80%; height: auto; object-fit: cover;">
-
-        <!-- Footer -->
-        <p style="opacity: 0.5;">Click to see a new pic</p>
+    <!-- Photo Display -->
+    <div class="fullscreen-photo">
+        <img id="photo-display" src="assets/images/photo1.JPG" alt="Photo" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
 
-    <!-- JavaScript for Random Photo -->
+    <!-- Footer -->
+    <p class="text-black position-absolute bottom-0 w-100 text-center" style="opacity: 0.5;">Click to see a new pic</p>
+
+    <!-- JavaScript -->
     <script>
         const photos = [
             "assets/images/photo1.JPG",
@@ -44,9 +44,7 @@
             "assets/images/photo18.JPG",
             "assets/images/photo19.JPG",
             "assets/images/photo20.JPG",
-
-
-            // Add paths for all 20 photos here
+            
         ];
 
         const photoDisplay = document.getElementById("photo-display");

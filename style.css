@@ -4,10 +4,9 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    overflow: hidden;
 }
 
-/* Background Video Styles */
+/* Background Video */
 .video-background {
     position: fixed;
     top: 0;
@@ -15,7 +14,6 @@ body, html {
     width: 100%;
     height: 100%;
     z-index: -1;
-    overflow: hidden;
 }
 
 .video-background video {
@@ -24,86 +22,71 @@ body, html {
     object-fit: cover;
 }
 
-/* Main Content Styling */
+/* Centered Content */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 100%;
-    color: white;
 }
 
-/* Header */
-h1 {
-    font-size: 10vw; /* Responsive font size */
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Buttons */
-.btn {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: black;
-}
-
-/* Portfolio Submenu */
-.portfolio-submenu {
-    display: flex;
-    flex-direction: column;
+/* Main Menu Buttons */
+.main-buttons {
     gap: 1rem;
 }
 
-.d-none {
-    display: none !important;
+.btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
 
-/* Footer */
-footer p, .container p {
-    font-size: 1rem;
-    opacity: 0.5;
+/* Submenu Styling */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-/* Back Button */
-.back-button {
+.submenu-link {
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+/* Back Button Styling */
+#back-btn {
+    font-size: 2rem; /* Increased size for visibility */
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
-    opacity: 0.7;
-}
-
-.back-button:hover {
-    opacity: 1;
-}
-
-/* Photos Page Specific Styles */
-.photos-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
+    color: black; /* Black color for white backgrounds */
     cursor: pointer;
+    opacity: 0.7;
+    text-decoration: none;
 }
 
-.photos-page p {
-    position: absolute;
-    bottom: 20px;
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+#back-btn:hover {
+    opacity: 1; /* Better visibility on hover */
+}
+
+/* Main Title ("Chloe Xu") */
+#main-title {
+    font-size: 8vw; 
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    color: white; /* White color for contrast on video background */
+}
+
+/* Photos Page */
+.photos-page .fullscreen-photo {
+    width: 100%;
+    height: 100vh;
 }
