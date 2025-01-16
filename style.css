@@ -24,64 +24,13 @@ body, html {
     object-fit: cover;
 }
 
-/* Main content styling */
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: white;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-/* Name styling */
+/* Custom styling for the name */
 #name {
-    font-size: 4rem;
-    position: relative;
     cursor: pointer;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Menu buttons */
-.menu {
-    margin-top: 20px;
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu-btn {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.menu-btn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-/* Portfolio submenu */
-.portfolio-menu {
-    display: none;
-    flex-direction: column;
-    margin-top: 10px;
-    gap: 5px;
-}
-
-.portfolio-menu a {
-    color: white;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.portfolio-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+/* Transition for submenu visibility */
+.portfolio-menu, .menu {
+    transition: opacity 0.3s ease;
 }

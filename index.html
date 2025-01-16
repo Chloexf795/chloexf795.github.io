@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chloe Xu</title>
-    <!-- Link to CSS file -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,23 +19,25 @@
     </div>
 
     <!-- Main content -->
-    <div class="content">
-        <h1 id="name">Chloe Xu</h1>
+    <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center vh-100">
+        <h1 id="name" class="display-1 mb-4">Chloe Xu</h1>
         <!-- Buttons menu -->
-        <div class="menu">
-            <button class="menu-btn" id="portfolio-btn">Portfolio</button>
-            <button class="menu-btn" id="hci-btn">HCI</button>
-            <button class="menu-btn" id="photos-btn">Photos</button>
+        <div class="menu d-none flex-column gap-3">
+            <button class="btn btn-outline-light" id="portfolio-btn">Portfolio</button>
+            <button class="btn btn-outline-light" id="hci-btn">HCI</button>
+            <button class="btn btn-outline-light" id="photos-btn">Photos</button>
         </div>
         <!-- Portfolio submenu -->
-        <div class="portfolio-menu">
-            <a href="#basic-info">Basic Info</a>
-            <a href="#experience">Experience</a>
-            <a href="assets/pdf/resume.pdf" download>Resume</a>
+        <div class="portfolio-menu d-none flex-column mt-3 gap-2">
+            <a href="#basic-info" class="btn btn-outline-light">Basic Info</a>
+            <a href="#experience" class="btn btn-outline-light">Experience</a>
+            <a href="assets/pdf/resume.pdf" download class="btn btn-outline-light">Resume</a>
         </div>
     </div>
 
-    <!-- Link to JavaScript file -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link to custom JavaScript -->
     <script src="main.js"></script>
 </body>
 </html>
