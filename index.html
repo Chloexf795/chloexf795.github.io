@@ -10,40 +10,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background video container -->
-    <div class="video-background">
-        <video autoplay loop muted>
-            <source src="assets/videos/Homepage-Video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <div class="container vh-100 d-flex flex-column justify-content-center align-items-center text-white text-center">
+        <!-- Header -->
+        <h1 class="display-1 mb-4">Chloe Xu</h1>
 
-    <!-- Main content -->
-    <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center vh-100">
-        <h1 id="name" class="display-1 mb-4">Chloe Xu</h1>
-        <!-- Buttons menu -->
-        <div class="menu d-none flex-column gap-3">
-            <button class="btn btn-outline-light" id="portfolio-btn">Portfolio</button>
-            <div class="portfolio-submenu d-none flex-column gap-2">
-                <button class="btn btn-outline-light">Basic Info</button>
-                <button class="btn btn-outline-light">Experience</button>
-                <a href="assets/pdf/resume.pdf" class="btn btn-outline-light" download>Resume</a>
-            </div>
-            <button class="btn btn-outline-light" id="hci-btn">HCI</button>
-            <button class="btn btn-outline-light" id="photos-btn">Photos</button>
+        <!-- Main Buttons -->
+        <div class="main-buttons d-flex flex-column align-items-center gap-3">
+            <button id="portfolio-btn" class="btn btn-outline-light">Portfolio</button>
+            <button id="hci-btn" class="btn btn-outline-light" onclick="location.href='hci.html'">HCI</button>
+            <button id="photos-btn" class="btn btn-outline-light" onclick="location.href='photos.html'">Photos</button>
         </div>
-        <!-- Back button -->
-        <p id="back-btn" class="back-text d-none">BACK</p>
+
+        <!-- Portfolio Submenu -->
+        <div id="portfolio-submenu" class="portfolio-submenu d-none flex-column gap-2 mt-3">
+            <a href="basic-info.html" class="btn btn-outline-light">Basic Info</a>
+            <a href="assets/pdf/resume.pdf" class="btn btn-outline-light" download>Resume</a>
+        </div>
+
+        <!-- Footer -->
+        <p class="mt-auto" style="opacity: 0.5;">This website is under construction</p>
     </div>
 
-    <!-- Footer text -->
-    <footer class="text-center text-white-50 position-absolute bottom-0 w-100">
-        <p class="mb-2">This website is under construction</p>
-    </footer>
+    <!-- JavaScript -->
+    <script>
+        // Portfolio button functionality
+        const portfolioBtn = document.getElementById("portfolio-btn");
+        const portfolioSubmenu = document.getElementById("portfolio-submenu");
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Link to custom JavaScript -->
-    <script src="main.js"></script>
+        portfolioBtn.addEventListener("click", () => {
+            // Toggle submenu visibility
+            portfolioSubmenu.classList.toggle("d-none");
+        });
+    </script>
 </body>
 </html>

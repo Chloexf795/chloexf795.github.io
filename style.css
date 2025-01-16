@@ -1,61 +1,56 @@
-/* Reset default styles */
-body, html {
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
 }
 
-/* Background video styles */
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
+h1 {
+    font-size: 10vw;
 }
 
-.video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+p {
+    font-size: 5vw;
 }
 
-/* Custom styling for the name */
-#name {
-    cursor: pointer;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Menu visibility */
-.menu {
-    transition: opacity 0.3s ease;
-}
-
-/* Portfolio submenu */
-.portfolio-submenu {
-    margin-left: 20px;
-}
-
-/* Back button styling */
-#back-btn {
+/* Buttons */
+.btn {
     font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    margin-top: 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
-/* Back button hover effect */
-#back-btn:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: underline;
+/* Portfolio Submenu */
+.portfolio-submenu {
+    display: flex;
 }
 
-/* Footer text */
-footer p {
-    font-size: 2vw;
+.d-none {
+    display: none !important;
+}
+
+/* Footer */
+footer {
+    font-size: 1rem;
     opacity: 0.5;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+
+.back-button:hover {
+    opacity: 1;
 }
