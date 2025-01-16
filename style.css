@@ -30,7 +30,13 @@ body, html {
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Transition for submenu visibility */
-.portfolio-menu, .menu {
+/* Menu visibility */
+.menu {
     transition: opacity 0.3s ease;
+}
+
+/* Footer text */
+footer p {
+    font-size: 2vw;
+    opacity: 0.5;
 }

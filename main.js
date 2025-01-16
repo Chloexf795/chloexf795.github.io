@@ -1,22 +1,14 @@
 // Get references to elements
 const nameElement = document.getElementById('name');
 const menu = document.querySelector('.menu');
-const portfolioBtn = document.getElementById('portfolio-btn');
-const portfolioMenu = document.querySelector('.portfolio-menu');
+const backBtn = document.getElementById('back-btn');
 
-// Show menu on hover over the name
-nameElement.addEventListener('mouseover', () => {
+// Show menu when mouse is near the name
+nameElement.addEventListener('mouseenter', () => {
     menu.classList.remove('d-none');
 });
 
-// Hide menu when the mouse leaves the name area
-nameElement.addEventListener('mouseleave', () => {
-    setTimeout(() => {
-        menu.classList.add('d-none');
-    }, 500);
-});
-
-// Toggle portfolio submenu visibility
-portfolioBtn.addEventListener('click', () => {
-    portfolioMenu.classList.toggle('d-none');
+// Hide menu when back button is clicked
+backBtn.addEventListener('click', () => {
+    menu.classList.add('d-none');
 });
